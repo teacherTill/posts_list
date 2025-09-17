@@ -1,0 +1,7 @@
+.posts {
+  display: flex;
+  height: fit-content;
+  gap: 110px;
+  background-color: skyblue;
+  padding: 100px 130px;
+}
