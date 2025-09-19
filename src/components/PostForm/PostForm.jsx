@@ -2,7 +2,6 @@ import styles from './PostForm.module.css'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
 import logo from '../../assets/user_logo.svg'
-import { useEffect } from 'react'
 
 const PostForm = ({ getPosts }) => {
   const {
