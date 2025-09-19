@@ -1,7 +1,7 @@
 import styles from './Post.module.css'
 import logo from '../../assets/user_logo.svg'
 
-const Post = ({ post }) => {
+const Post = ({ post, handleDeletePost }) => {
   return (
     <div>
       <div>
@@ -13,7 +13,7 @@ const Post = ({ post }) => {
       </div>
       <div>
         <p>id:{post.id}</p>
-        <button>удалить</button>
+        <button onClick={() => handleDeletePost(post.id)}>удалить</button>
       </div>
     </div>
   )

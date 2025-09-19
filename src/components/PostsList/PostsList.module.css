@@ -1,6 +1,8 @@
 .postsList {
-  max-width: 1000px;
+  max-width: 1050px;
+  width: 100%;
   background: rgba(125, 159, 255, 1);
+  min-width: 500px;
 }
 .postsTitle {
 }

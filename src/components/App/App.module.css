@@ -1,6 +1,6 @@
 .posts {
   display: flex;
-  height: fit-content;
+  height: 90vh;
   gap: 110px;
   background-color: skyblue;
   padding: 100px 130px;

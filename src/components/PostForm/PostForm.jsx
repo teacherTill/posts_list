@@ -2,11 +2,13 @@ import styles from './PostForm.module.css'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
 import logo from '../../assets/user_logo.svg'
+import { useEffect } from 'react'
 
-const PostForm = () => {
+const PostForm = ({ getPosts }) => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({ mode: 'onSubmit' })
 
@@ -16,8 +18,9 @@ const PostForm = () => {
         'https://68ca6a32430c4476c3496059.mockapi.io/posts',
         post
       )
+      getPosts()
 
-      console.log(post)
+      reset()
     } catch (error) {
       console.error(error)
     }
